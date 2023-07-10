@@ -14,12 +14,12 @@
 
 | 寄存器名称 | R/W  | 全称                       | 作用                              | 描述                                                         |
 | ---------- | ---- | -------------------------- | --------------------------------- | ------------------------------------------------------------ |
-| ECtrl      | R/W  | Encoder_Ctrl               | Encode阶段控制寄存器              | 0 bit：启动控制位，为1时启动，启动后外设自动置0<br />1 bit：监视位，在转换的时候为1，空闲时为0<br />[63:2]: Reserved |
-| EBAdd      | W    | Encoder_BMP_Address        | Encode阶段BMP帧的起始地址         | [63:0]:Addr                                                  |
-| EBW        | W    | Encoder_BMP_Width          | Encode阶段BMP帧（8bit）的图像宽度 | [63:0]:一帧图像（8bit）的像素宽度                            |
-| EBH        | W    | Encoder_BMP_Height         | Encode阶段BMP帧（8bit）的图像高度 | [63:0]:一帧图像（8bit）的像素高度                            |
-| EJAdd      | W    | Encoder_JLS_Address        | 指定Encode阶段JLS帧存放的起始地址 | [63:0]:Addr                                                  |
-| EJAddOff   | R    | Encoder_JLS_Address_Offset | Encode阶段JLS帧的偏移量           | [63:0]:Offset                                                |
+| ECtrl      | R/W  | Encoder_Ctrl               | Encode阶段控制寄存器              | 0 bit：启动控制位，为1时启动，启动后外设自动置0<br />1 bit：监视位，在转换的时候为1，空闲时为0<br />[31:2]: Reserved |
+| EBAdd      | W    | Encoder_BMP_Address        | Encode阶段BMP帧的起始地址         | [31:0]:Addr                                                  |
+| EBW        | W    | Encoder_BMP_Width          | Encode阶段BMP帧（8bit）的图像宽度 | [31:0]:一帧图像（8bit）的像素宽度                            |
+| EBH        | W    | Encoder_BMP_Height         | Encode阶段BMP帧（8bit）的图像高度 | [31:0]:一帧图像（8bit）的像素高度                            |
+| EJAdd      | W    | Encoder_JLS_Address        | 指定Encode阶段JLS帧存放的起始地址 | [31:0]:Addr                                                  |
+| EJAddOff   | R    | Encoder_JLS_Address_Offset | Encode阶段JLS帧的偏移量           | [31:0]:Offset                                                |
 
 
 
